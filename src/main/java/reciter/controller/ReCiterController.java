@@ -26,7 +26,7 @@ public class ReCiterController {
 	@RequestMapping(value = "/reciter/save/scopus/articles/", method = RequestMethod.PUT)
 	@ResponseBody
 	public void savePubMedArticles(@RequestBody List<ScopusArticle> scopusArticles) {
-		slf4jLogger.info("calling savePubMedArticles with numberOfPubmedArticles=" + scopusArticles.size());
+		slf4jLogger.info("calling savePubMedArticles with number of Scopus articles=" + scopusArticles.size());
 		scopusService.save(scopusArticles);
 	}
 	
